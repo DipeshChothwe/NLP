@@ -1,0 +1,58 @@
+MACHINE LEARNING
+WORKSHEET – 1
+In Q1 to Q7, only one option is correct, Choose the correct option:
+
+1. The value of correlation coefficient will always be:
+A) between 0 and 1 
+
+2. Which of the following cannot be used for dimensionality reduction?
+D) Ridge Regularisation
+
+3. Which of the following is not a kernel in Support Vector Machines?
+C) hyperplane 
+
+4. Amongst the following, which one is least suitable for a dataset having non-linear decision boundaries?
+A) Logistic Regression 
+
+5. In a Linear Regression problem, ‘X’ is independent variable and ‘Y’ is dependent variable, where ‘X’ represents
+weight in pounds. If you convert the unit of ‘X’ to kilograms, then new coefficient of ‘X’ will be?
+(1 kilogram = 2.205 pounds)
+C) old coefficient of ‘X’ ÷ 2.205 
+
+6. As we increase the number of estimators in ADABOOST Classifier, what happens to the accuracy of the model?
+B) increases
+
+7. Which of the following is not an advantage of using random forest instead of decision trees?
+C) Random Forests are easy to interpret
+
+In Q8 to Q10, more than one options are correct, Choose all the correct options:
+
+8. Which of the following are correct about Principal Components?
+B) Principal Components are calculated using unsupervised learning techniques
+C) Principal Components are linear combinations of Linear Variables.
+
+9. Which of the following are applications of clustering?
+A) Identifying developed, developing and under-developed countries on the basis of factors like GDP, poverty
+index, employment rate, population and living index
+B) Identifying loan defaulters in a bank on the basis of previous years’ data of loan accounts.
+C) Identifying spam or ham emails
+D) Identifying different segments of disease based on BMI, blood pressure, cholesterol, blood sugar levels.
+
+10. Which of the following is(are) hyper parameters of a decision tree?
+A) max_depth B) max_features
+C) n_estimators D) min_samples_leaf
+
+Q10 to Q15 are subjective answer type questions, Answer them briefly.
+
+11. What are outliers? Explain the Inter Quartile Range(IQR) method for outlier detection.
+Answer: An outlier is a data point which differs significantly from other observations. There are several models to indentify outliers one of them is IQR method. In this method, the data is divided in four quartiles each having 25% of the data (Q1 to Q4 having smallest to largest data). Thus Q1 has 25% of the data below it, Q2 having 50% data below it, and so on. IQR method uses interquartile range which is difference between Q3 and Q1. In normal distribution, it is considered that data points till +/-2.7sigma are significant. Thus to mark these boundaries, following formulas have been devised for lower bounnd: (Q1 - 1.5 IQR) and upper bound: (Q3 + 1.5 IQR) | where IQR is (Q3 - Q1). 
+
+12. What is the primary difference between bagging and boosting algorithms?
+Answer: Both are ensemble techniques which use combined learning from multiple models to train the dataset. However, they both have difference in the way they choose samples and how the models are weighed. Bagging uses random sampling with replacement for each model and all the models are trained parallely. Also the final model score is the average of all the models with model having equal weight. But Boosting algorithm biulds the model in sequential way and increases the weights for misclassified data. Thus there is higher chance that misclassified data would be selected for training in the subsequent model. Considering this, boosting is not useful if overfitting is the problem for the single model however, if the single model has low performance, then boosting is useful.
+
+13. What is adjusted R2 in logistic regression. How is it calculated?
+Answer: 
+
+14. What is the difference between standardisation and normalisation?
+
+15. What is cross-validation? Describe one advantage and one disadvantage of using cross-validation.
